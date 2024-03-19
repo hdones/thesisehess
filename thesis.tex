@@ -1,0 +1,122 @@
+\documentclass{book}
+\usepackage{thesisehess}
+
+% Modifiez les informations ici ; pour Mme : M\up{me} 
+\newcommand{\thesisauthorname}{Nom et prénom de l'auteur}
+\newcommand{\thesistitle}{Titre de la thèse}
+\newcommand{\thesissubtitle}{éventuellement sous-titre}
+\newcommand{\thesisdirectedby}{M\up{me} Prénom Nom, établissement}
+\newcommand{\thesisdirectedbytwo}{M. Prénom Nom, établissement}
+\newcommand{\thesisdefensedate}{le 19 mars 2024}
+\newcommand{\thesisrapporteurone}{M\up{me} Prénom Nom, établissement}
+\newcommand{\thesisrapporteursecond}{M. Prénom Nom, établissement}
+\newcommand{\thesisjuryone}{M\up{me} Prénom Nom, établissement}
+\newcommand{\thesisjurytwo}{M. Prénom Nom, établissement}
+\newcommand{\thesisjurythree}{M. Prénom Nom, établissement}
+\newcommand{\thesisjuryfour}{M\up{me} Prénom Nom, établissement}
+\newcommand{\thesisjuryfive}{M. Prénom Nom, établissement}
+
+
+\begin{document}
+
+
+\makethesistitle
+
+
+% Blankpage pour la page 2 :
+\thispagestyle{empty} 
+
+
+\chapter*{Remerciements}
+\markboth{Remerciements}{Remerciements}
+\addcontentsline{toc}{chapter}{Remerciements}
+\blindtext
+
+
+\chapter*{Résumé et mots clés}
+\markboth{Résumé}{Résumé}
+\addcontentsline{toc}{chapter}{Résumé}
+\blindtext
+\paragraph{Mots-clés} mot, mot, mot
+
+
+\chapter*{Abstract and Keywords}
+\markboth{Abstract and Keywords}{Abstract and Keywords}
+\addcontentsline{toc}{chapter}{Abstract and Keywords}
+\blindtext
+\paragraph{Keywords} word, word, word
+
+
+\tableofcontents
+\markboth{Table des matières}{Table des matières}
+\addcontentsline{toc}{chapter}{Table des matières}
+
+
+\listoffigures
+\markboth{Table des figures}{Table des figures}
+\addcontentsline{toc}{chapter}{Table des figures}
+
+
+\chapter*{Introduction}
+\markboth{Introduction}{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\blindtext
+
+% Pour les citations
+\begin{quote}
+    \onehalfspacing
+\og{} \blindtext \fg{}
+\end{quote}
+
+
+
+% Les différents niveaux de titres
+\part{Titre de la partie 1}
+\chapter{Titre du chapitre}
+\blindtext
+\section*{Titre de niveau 1}
+\blindtext
+\subsection*{Titre de niveau 1.1}
+\blindtext
+\subsection*{Titre de niveau 1.1.1}
+\blindtext
+
+
+\chapter*{Bibliographie}
+\markboth{Bibliographie}{Bibliographie}
+\addcontentsline{toc}{chapter}{Bibliographie}
+
+\begin{itemize}
+    \item Ouvrages imprimés
+    \item Ouvrages électroniques 
+    \item Chapitre dans un ouvrage imprimé 
+    \item Rapports imprimés 
+    \item Travaux universitaires 
+    \item Articles de périodiques imprimés 
+    \item Articles de périodiques électroniques 
+    \item Communication dans un congrès 
+    \item Sites web consultés.
+\end{itemize}
+
+
+\chapter*{Annexe 1}
+\markboth{Annexe 1}{Annexe 1}
+\addcontentsline{toc}{chapter}{Bibliographie}
+Chaque annexe doit commencer sur une nouvelle page et numérotée : Annexe 1 puis Annexe 2, etc.
+
+
+\chapter*{Index géographique}
+\markboth{Index géographique}{Index géographique}
+\addcontentsline{toc}{chapter}{Index géographique}
+
+
+\chapter*{Index général}
+\markboth{Index général}{Index général}
+\addcontentsline{toc}{chapter}{Index général}
+
+
+
+\end{document}
+
+
+

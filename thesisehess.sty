@@ -1,0 +1,134 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{thesisehess}
+
+% Les paquets nécessaires
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{fix-cm}
+\RequirePackage[english,french]{babel}
+\RequirePackage{graphicx}
+\RequirePackage{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{titling}
+\RequirePackage{titlesec}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+\usetikzlibrary{calc}
+\RequirePackage{caption}
+\RequirePackage{lipsum}  
+\RequirePackage{blindtext}
+\RequirePackage[hidelinks]{hyperref}
+
+% Paramètres de la mise en page
+\geometry{a4paper, margin=2.5cm}
+
+\hypersetup{
+  linkcolor=black,
+  citecolor=black,
+  filecolor=black,
+  urlcolor=black,
+  linktoc=all
+}
+
+% Les informations relatives à l'université et à l'école doctorale
+\newcommand{\universitylogo}{ehess.png}
+\newcommand{\universityname}{\raisebox{\dimexpr\height-\baselineskip-\vspaceamount}{\LARGE École des Hautes Études en Sciences Sociales}}
+\newcommand{\doctschool}{École doctorale de l'EHESS}
+
+\newlength{\vspaceamount}
+\setlength{\vspaceamount}{-2.2cm}
+
+% Styles de chapitre et de section
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\huge}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+% Paramètres de la page de couverture
+\newcommand{\makethesistitle}{
+    \begin{titlepage}
+      \begin{center}
+        \includegraphics[width=3cm]{\universitylogo}\quad
+        \LARGE\universityname
+      \end{center}
+      %
+      \begin{center}  
+        \begin{minipage}[t]{0.5\textwidth}
+          \centering  
+          \normalsize\doctschool \\
+          \vspace{0.5cm}
+          Nom du centre de recherches \\
+          \vspace{0.5cm}
+          Doctorat \\
+          \vspace{0.5cm}
+          Discipline : \\
+          \vspace{0.5cm}
+          {\textbf{\large\thesisauthorname}}
+        \end{minipage}
+      \end{center}
+      \vspace{0.7cm}
+      % Titre principale
+      \begin{center}
+        \framebox[0.9\textwidth]{%
+          \parbox{0.75\textwidth}{%
+            \centering
+            \vspace{0.4cm}
+            {\textbf{\huge\thesistitle}} \\
+            \vspace{0.4cm}
+            \textbf{\Large\thesissubtitle}
+            \vspace{0.4cm}
+          }
+        }
+      \end{center}
+      \vspace{1cm}
+      \raggedright
+      \normalsize
+      \textbf{Thèse dirigée par:}\hspace{0.5em}  \\ % \hspace{0.5em} pour enlever l'indentation
+      \vspace{0.3cm}
+      1. \thesisdirectedby \\
+      2. \thesisdirectedbytwo \\
+      \vspace{0.3cm}
+      \textbf{Date de soutenance :} \thesisdefensedate \\
+      \vspace{0.3cm}
+      \begin{flushleft}
+        \textbf{Rapporteurs :} \\
+        \vspace{0.3cm}
+        1. \thesisrapporteurone \\
+        2. \thesisrapporteursecond \\
+        \vspace{0.3cm}
+        \textbf{Jury :} \\
+        \vspace{0.3cm}
+        1. \thesisjuryone \\
+        2. \thesisjurytwo \\
+        3. \thesisjurythree \\
+        4. \thesisjuryfour \\
+        5. \thesisjuryfive \\
+      \end{flushleft}
+    \end{titlepage}
+  }
+  
+% En-têtes au centre et numéro de page au centre : 
+\usepackage{fancyhdr}
+
+\fancypagestyle{plain_center}{
+  \fancyhf{}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyhead[C]{\nouppercase{\leftmark}}
+}
+
+\pagestyle{plain_center}
+
+\setlength{\headheight}{14.61858pt}
+\addtolength{\topmargin}{-2.61858pt}
+
+
+% Interligne 1.5 : 
+\usepackage{setspace} 
+\setstretch{1.5}
+
+\endinput
