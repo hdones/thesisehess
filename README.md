@@ -1,8 +1,8 @@
-# Projet de Thèse LaTeX EHESS
+# Thèse LaTeX EHESS
 
 ## Introduction
 
-Ce dépôt propose un template LaTeX permettant de créer une thèse conforme aux normes de présentation de l'[École des Hautes Études en Sciences Sociales (EHESS)](https://www.ehess.fr/).
+Ce dépôt propose un template LaTeX permettant de créer une thèse conforme aux normes de présentation de l'[École des Hautes Études en Sciences Sociales](https://www.ehess.fr/).
 
 
 ## Fichiers
@@ -18,14 +18,14 @@ Les fichiers suivants sont inclus dans ce projet :
 
 1. **Téléchargement et Organisation des fichiers** : Téléchargez tous les fichiers nécessaires, y compris le fichier `thesisehess.sty`, et placez-les dans un dossier dédié pour votre projet de thèse.
 
-2. **Utilisation du style EHESS** : Dans votre document `.tex`, ajoutez la ligne suivante au début du préambule pour utiliser le style EHESS :
+2. **Utilisation du style EHESS** : Dans votre document `.tex`, ajoutez les lignes suivantes au début du préambule pour utiliser le style [EHESS](https://www.ehess.fr/) :
 
     ```latex
     \documentclass{book}
     \usepackage{thesisehess}
     ```
 
-3. **Modification des métadonnées** : Après avoir déclaré `\documentclass{book}` et `\usepackage{thesisehess}` dans le préambule de votre document `.tex`, modifiez le champs de métadonnées pour correspondre à votre projet de thèse :
+3. **Modification des métadonnées** : Après avoir déclaré `\documentclass{book}` et `\usepackage{thesisehess}` dans le préambule de votre document `.tex`, modifiez le champs de métadonnées pour qu'ils correspondent à votre projet de thèse.
 
 ## Contact
 
